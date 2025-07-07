@@ -1,0 +1,21 @@
+Public Reference
+
+Cual es el problema que queremos resolver:
+- La manera de hacer política actualmente, basándonos en los principios de Goebbels, creemos que tiende a generar una división social donde se hace creer a los miembros del "grupo" que son los "buenos", mientras que los que no están en el "grupo" son los "malos". Esto, si bien atrae votos, genera un circulo vicioso en el que, bajo la creencia de que los "otros" te odian o te quieren hacer daño, acabas odiándoles de vuelta, creando una espiral de odio.
+- Creemos que se está creando una polarización social verdadera o aparente, y el hecho de que exista esa polarización social desde el punto de vista del individuo, hace que este sea más propenso a polarizarse en la dirección que le toque, alimentando la espiral.
+
+Como lo vamos a resolver:
+- Mostrar datos objetivos sobre el gasto público o distribución del dinero público (y si es posible, en detalle). Cosas que se aprueban, contratos, dinero por ministerio...
+- Sistema de referendum a la población (1 pregunta, calificación del 1 al 5) que saque estadísticas y las muestre públicamente -> Es muy importante que sean preguntas cuyo origen sea anónimo (no se sepa qué partido propuso la medida, quien la ha hecho, etc.).
+- Proporcionar datos del INE directamente dentro de la aplicación, dandole una cara más agradable que la página web del INE. Se pueden utilizar referencias directas a estos datos dentro de la pregunta para contextualizarla.
+- Una sección en la que se ven las publicaciones que ha hecho cada periódico sobre una misma noticia, para poder comparar rapidamente (estilo Ground News).
+
+Arquitectura
+- Base de datos: PostgreSQL
+- RestAPI: 
+    Base: typescript/expressjs
+    ORM: Sequelize
+    Cache: Redis
+    Mail: Nodemailer
+    SMS: 
+- Frontend: React Native (IOS y Android)
